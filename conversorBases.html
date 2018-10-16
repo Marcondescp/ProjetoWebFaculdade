@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de Bases</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="nav-wrapper #263238 blue-grey darken-4">
+            <a href="index.html" class="brand-logo">Calculadora</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li ><a href="index.html">Operando</a></li>
+                <li><a href="doisOperandos.html">Operandos</a></li>
+                <li><a href="conversorMoedas.html">Conversor de moedas</a></li>
+                <li class="active"><a href="conversorBases.html">Conversor de bases</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+            <ul id="slide-out" class="sidenav">
+                <li><a href="index.html">Operando</a></li>
+                <li><a href="doisOperandos.html">Operandos</a></li>
+                <li><a href="conversorMoedas.html">Conversor de moedas</a></li>
+                <li><a href="conversorBases.html">Conversor de bases</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIM NAV -->
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="row">
+            <h1>CONVERSOR DE BASES</h1>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="input-field">
+                    <input type="text" id="valueInput" class="validate">
+                    <label for="valueInput">Valor:</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form action="" class="form1">
+                <div class="col s6">
+                    <p>
+                        <label>
+                            <input name="group1" type="radio" id="r1">
+                            <span>Dec <i class="tiny material-icons">arrow_forward</i> Bin</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group1" type="radio" id="r2">
+                            <span>Dec <i class="tiny material-icons">arrow_forward</i> Hex</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group1" type="radio" id="r3">
+                            <span>Bin <i class="tiny material-icons">arrow_forward</i> Dec</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group1" type="radio" id="r4">
+                            <span>Hex <i class="tiny material-icons">arrow_forward</i> Dec</span>
+                        </label>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h3>Resultado:</h3>
+                <div>
+                    <textarea class="materialize-textarea" id="inputShowResult" disabled></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div col s6>
+                <button type="submit" id="inputCleanUp" class="waves-effect waves-light btn" type="reset">Limpar</button>
+                <button type="submit" id="inputExecute" class="waves-effect waves-light btn">Executar</button>
+            </div>
+        </div>
+    </div>
+    <!-- FIM CONTAINER -->
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/conversorBases.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+h1,h2,h3,h4,p{
+    font-family: 'Hind Madurai', sans-serif;
+}
+li,a{
+    font-family: 'Anton', sans-serif;
+}
+
+.hide{
+    visibility: hidden;
+}
+.container{
+    margin-top: 30px;
+}
+
+
+
